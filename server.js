@@ -1,4 +1,4 @@
-prompt("Enter  your name");
+
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
@@ -23,3 +23,4 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+prompt("Enter  your name");

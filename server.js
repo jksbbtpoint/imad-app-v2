@@ -14,6 +14,46 @@ app.get('/article-one', function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
+var container = {
+    title: prompt("Enter title"),
+    heading: "jks",
+    author: "jks",
+    l1:"jks",
+    l2:"jks",
+    l3:"jks",
+    l4:"jks",
+    l5:"jks"
+    
+};
+
+
+var template = function(data){
+var title=data.title;
+var heading=data.heading;
+var author=data.author;
+var l1=data.l1;
+var l2=data.l2;
+var l3=data.l3;
+var l4=data.l4;
+var l5=data.l5;
+var createTemplate =`<html>
+  <head>
+    <title>${title}</title>    
+  </head>
+  <body>
+    <h1>${heading}</h1>
+    <h4>By ${author}</h4>
+    <ol>
+        <li>${l1}</li>
+        <li>${l2}</li>
+        <li>${l3}</li>
+        <li>${l4}</li>
+        <li>${l5}</li>
+    </ol>
+  </body>
+ </html>`;
+};
+
 app.get('/GAL', function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'GAL.html'));
 });
@@ -22,12 +62,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-
-
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {

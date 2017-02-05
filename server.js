@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createtemplate(getalife));
 });
 
 var container = {
@@ -27,16 +27,16 @@ var container = {
 };
 
 
-var template = function(data){
-var title=data.title;
-var heading=data.heading;
-var author=data.author;
-var l1=data.l1;
-var l2=data.l2;
-var l3=data.l3;
-var l4=data.l4;
-var l5=data.l5;
-var createTemplate =`<html>
+function createtemplate(data){
+    var title=data.title;
+    var heading=data.heading;
+    var author=data.author;
+    var l1=data.l1;
+    var l2=data.l2;
+    var l3=data.l3;
+    var l4=data.l4;
+    var l5=data.l5;
+var htmlTemplate =`<html>
   <head>
     <title>${title}</title>    
   </head>
@@ -52,7 +52,8 @@ var createTemplate =`<html>
     </ol>
   </body>
  </html>`;
-};
+ return htmlTemplate;
+}
 
 app.get('/GAL', function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'GAL.html'));

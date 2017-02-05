@@ -39,6 +39,7 @@ var htmlTemplate =`<html>
     <title>${title}</title>    
   </head>
   <body>
+  <div class = "container">
     <h1>${heading}</h1>
     <h4>By ${author}</h4>
     <ol>
@@ -48,6 +49,7 @@ var htmlTemplate =`<html>
         <li>${l4}</li>
         <li>${l5}</li>
     </ol>
+    </div>
   </body>
  </html>`;
  return htmlTemplate;

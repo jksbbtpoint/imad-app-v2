@@ -12,15 +12,15 @@ app.get('/', function (req, res) {
 
 
 
-var container = {
-    title: "jks",
-    heading: "jks",
-    author: "jks",
-    l1:"jks",
-    l2:"jks",
-    l3:"jks",
-    l4:"jks",
-    l5:"jks"
+var container1 = {
+    title: "Copycat Marketing 101| Burke Hedges",
+    heading: "Copycat Marketing 101",
+    author: "Burke Hedges",
+    l1:"Jobs are a system for income creation, not wealth creation.",
+    l2:"The rich get richer because they take advantage of leverage by investing their money over time.",
+    l3:"We do what most people do... and as a result, we get what most people get!",
+    l4:"Hiring emoyees is the most obvious way business owners leverage their time.",
+    l5:"Ford was smart enough to leverage his time and talents by teaching his employees to copycat his system."
     
 };
 
@@ -57,7 +57,7 @@ var htmlTemplate =`<html>
 }
 
 app.get('/article-one', function (req, res){
-    res.send(createtemplate(container));
+    res.send(createtemplate(container1));
 });
 
 app.get('/GAL', function (req, res){

@@ -56,7 +56,7 @@ var htmlTemplate =`<html>
  return htmlTemplate;
 }
 
-app.get('/article-one', function (req, res){
+app.get('/CC101', function (req, res){
     res.send(createtemplate(container1));
 });
 

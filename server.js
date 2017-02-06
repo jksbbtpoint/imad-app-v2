@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 
 
 var container = {
-    title: "jkajkajkaj",
+    title: prompt("Enter ttle:"),
     heading: "jks",
     author: "jks",
     l1:"jks",

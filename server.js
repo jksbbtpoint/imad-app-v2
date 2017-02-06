@@ -27,6 +27,7 @@ var container = {
 
 
 function createtemplate(data){
+    jPrompt("dkjsf");
     var title=data.title;
     var heading=data.heading;
     var author=data.author;

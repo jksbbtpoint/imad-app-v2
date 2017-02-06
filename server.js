@@ -20,8 +20,8 @@ var container1 = {
     l2:"The rich get richer because they take advantage of leverage by investing their money over time.",
     l3:"We do what most people do... and as a result, we get what most people get!",
     l4:"Hiring emoyees is the most obvious way business owners leverage their time.",
-    l5:"Ford was smart enough to leverage his time and talents by teaching his employees to copycat his system."
-    
+    l5:"Ford was smart enough to leverage his time and talents by teaching his employees to copycat his system.",
+    add:"https://images-na.ssl-images-amazon.com/images/I/51wFlTPTcSL._SY344_BO1,204,203,200_.jpg"
 };
 
 var container2 = {
@@ -32,8 +32,8 @@ var container2 = {
     l2:"Focus on the finish line, not the hurdle.",
     l3:"Hurdles are designed for jumping.",
     l4:"Pursuing your dream is like running a hurdle race.",
-    l5:"Filling in the gaps is what personal growth is all about."
-    
+    l5:"Filling in the gaps is what personal growth is all about.",
+    add:"http://imshopping.rediff.com/imgchkbooks/200-300/books/pixs/80/9789380494180.jpg"
 };
 
 var container3 = {
@@ -44,8 +44,8 @@ var container3 = {
     l2:"Deposit only postive thouths in your memory bank",
     l3:"Belief releases creative powers. Disbelief puts the brakes on.",
     l4:"Defeat is only a state of mind and nothing more.",
-    l5:"People do more for you when you make them feel important."
-    
+    l5:"People do more for you when you make them feel important.",
+    add:"https://images-na.ssl-images-amazon.com/images/I/814n2fhKdvL.jpg"
 };
 
 function createtemplate(data){
@@ -58,6 +58,7 @@ function createtemplate(data){
     var l3=data.l3;
     var l4=data.l4;
     var l5=data.l5;
+    var add = data.add
 var htmlTemplate =`<html>
   <head>
     <title>${title}</title>    
@@ -73,6 +74,7 @@ var htmlTemplate =`<html>
         <li>${l4}</li>
         <li>${l5}</li>
     </ol>
+    <img src="${add}"></img>
     </div>
   </body>
  </html>`;

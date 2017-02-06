@@ -31,8 +31,20 @@ var container2 = {
     l1:"Big dreams are the biggest part of the big picture. ",
     l2:"Focus on the finish line, not the hurdle.",
     l3:"Hurdles are designed for jumping.",
-    l4:"Pusuing your dream is like running a hurdle race.",
+    l4:"Pursuing your dream is like running a hurdle race.",
     l5:"Filling in the gaps is what personal growth is all about."
+    
+};
+
+var container3 = {
+    title: "The Magic of Thinking Big | David J. Schwartz",
+    heading: "The Magic of Thinking Big",
+    author: "David J. Schwartz",
+    l1:"When you believe I can do it, then how to do it develops.",
+    l2:"Deposit only postive thouths in your memory bank",
+    l3:"Belief releases creative powers. Disbelief puts the brakes on.",
+    l4:"Defeat is only a state of mind and nothing more.",
+    l5:"People do more for you when you make them feel important."
     
 };
 
@@ -74,6 +86,11 @@ app.get('/CC101', function (req, res){
 app.get('/B2B', function (req, res){
     res.send(createtemplate(container2));
 });
+
+app.get('/TMTB', function (req, res){
+    res.send(createtemplate(container3));
+});
+
 
 app.get('/GAL', function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'GAL.html'));

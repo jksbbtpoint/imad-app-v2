@@ -27,7 +27,6 @@ var container = {
 
 
 function createtemplate(data){
-    prompt("bb");
     var title=data.title;
     var heading=data.heading;
     var author=data.author;

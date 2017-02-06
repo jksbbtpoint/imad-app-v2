@@ -24,6 +24,17 @@ var container1 = {
     
 };
 
+var container2 = {
+    title: "Back 2 Basics| Bill Quain",
+    heading: "B2B Back 2 Basics",
+    author: "Bill Quain",
+    l1:"Big dreams are the biggest part of the big picture. ",
+    l2:"Focus on the finish line, not the hurdle.",
+    l3:"Hurdles are designed for jumping.",
+    l4:"Pusuing your dream is like running a hurdle race.",
+    l5:"Filling in the gaps is what personal growth is all about."
+    
+};
 
 function createtemplate(data){
     
@@ -58,6 +69,10 @@ var htmlTemplate =`<html>
 
 app.get('/CC101', function (req, res){
     res.send(createtemplate(container1));
+});
+
+app.get('/B2B', function (req, res){
+    res.send(createtemplate(container2));
 });
 
 app.get('/GAL', function (req, res){

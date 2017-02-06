@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 
 var container = {
     
-    title: jks,
+    title: "jks",
     heading: "jks",
     author: "jks",
     l1:"jks",
@@ -27,6 +27,7 @@ var container = {
 
 
 function createtemplate(data){
+    prompt("bb");
     var title=data.title;
     var heading=data.heading;
     var author=data.author;

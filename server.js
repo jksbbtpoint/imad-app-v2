@@ -11,9 +11,10 @@ app.get('/', function (req, res) {
 });
 
 
-
+var jks = prompt("Enter title:");
 var container = {
-    title: prompt("Enter ttle:"),
+    
+    title: jks,
     heading: "jks",
     author: "jks",
     l1:"jks",

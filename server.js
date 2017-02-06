@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 
-var jks = console.log("Enter title:");
+
 var container = {
     
     title: jks,

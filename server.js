@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 
-var jks = prompt("Enter title:");
+var jks = console.log("Enter title:");
 var container = {
     
     title: jks,

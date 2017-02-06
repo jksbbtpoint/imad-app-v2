@@ -74,7 +74,7 @@ var htmlTemplate =`<html>
         <li>${l4}</li>
         <li>${l5}</li>
     </ol>
-    <img src="${add}" height=150 width=150></img>
+    <img src="${add}" height=300 width=200></img>
     </div>
   </body>
  </html>`;

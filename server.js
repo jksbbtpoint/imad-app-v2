@@ -58,7 +58,7 @@ function createtemplate(data){
     var l3=data.l3;
     var l4=data.l4;
     var l5=data.l5;
-    var add = data.add
+    var add = data.add;
 var htmlTemplate =`<html>
   <head>
     <title>${title}</title>    

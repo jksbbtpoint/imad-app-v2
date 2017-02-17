@@ -94,7 +94,7 @@ app.get('/TMTB', function (req, res){
 });
 
 app.get('/jks', function (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'main.jss'));
+    res.sendFile(path.join(__dirname, 'ui', 'jks.js'));
 });
 
 

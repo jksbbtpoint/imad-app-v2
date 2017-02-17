@@ -2,7 +2,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-document.writeln("hjhjhjk");
+window.prompt("hjhjhjk");
 var app = express();
 app.use(morgan('combined'));
 

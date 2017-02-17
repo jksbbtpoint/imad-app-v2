@@ -93,6 +93,10 @@ app.get('/TMTB', function (req, res){
     res.send(createtemplate(container3));
 });
 
+app.get('/jks', function (req, res){
+    res.sendFile(path.join(__dirname, 'ui', 'main.jss'));
+});
+
 
 app.get('/GAL', function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'GAL.html'));

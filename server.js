@@ -2,7 +2,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-//window.prompt("hjhjhjk");
+
 var app = express();
 app.use(morgan('combined'));
 
@@ -92,11 +92,6 @@ app.get('/B2B', function (req, res){
 app.get('/TMTB', function (req, res){
     res.send(createtemplate(container3));
 });
-
-//app.get('/jks', function (req, res){
-  //  res.sendFile(path.join(__dirname, 'ui', 'jks.js'));
-//});
-
 
 
 app.get('/GAL', function (req, res){

@@ -9,7 +9,7 @@ var config={
     database: 'jksbbtpoint',
     host: 'db.imad.hasura-app.io',
     port: '5432',
-    password: 'db-jksbbtpoint-70709'
+    password: process.env.DB_PASSWORD
 };
 var app = express();
 app.use(morgan('combined'));
